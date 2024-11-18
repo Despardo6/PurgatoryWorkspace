@@ -1,11 +1,30 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PurgatoryBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/block/PurgatoryBlockBlock.java",
+          "src/main/resources/assets/purgatory/blockstates/purgatory_block.json",
+          "src/main/resources/assets/purgatory/models/block/purgatory_block.json",
+          "src/main/resources/assets/purgatory/models/item/purgatory_block.json",
+          "src/main/resources/data/purgatory/loot_table/blocks/purgatory_block.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.purgatory.purgatory_block": "Purgatory Block"
+    }
   },
   "foldersRoot": {
     "name": "~",

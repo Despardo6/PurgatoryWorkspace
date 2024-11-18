@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "purgatory:block/purgatory_block"
+    }
+  }
+}
