@@ -18,6 +18,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.purgatory.init.PurgatoryModTabs;
+import net.mcreator.purgatory.init.PurgatoryModItems;
+import net.mcreator.purgatory.init.PurgatoryModBlocks;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
 import java.util.List;
@@ -35,6 +39,12 @@ public class PurgatoryMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+
+		PurgatoryModBlocks.REGISTRY.register(modEventBus);
+
+		PurgatoryModItems.REGISTRY.register(modEventBus);
+
+		PurgatoryModTabs.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purgatory:block/purgatory_block_bottom",
+    "up": "purgatory:block/purgatory_block_top",
+    "north": "purgatory:block/purgatory_block_side",
+    "east": "purgatory:block/purgatory_block_bottom",
+    "south": "purgatory:block/purgatory_block_bottom",
+    "west": "purgatory:block/purgatory_block_bottom",
+    "particle": "purgatory:block/purgatory_block_bottom"
+  },
+  "render_type": "solid"
+}
