@@ -15,6 +15,195 @@
           "src/main/resources/data/purgatory/loot_table/blocks/purgatory_block.json"
         ]
       }
+    },
+    {
+      "name": "Grunt",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/entity/GruntEntity.java",
+          "src/main/java/net/mcreator/purgatory/entity/model/GruntModel.java",
+          "src/main/resources/assets/purgatory/models/item/grunt_spawn_egg.json",
+          "src/main/java/net/mcreator/purgatory/client/renderer/GruntRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "GruntEntityFalls",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_entity_falls",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntEntityFallsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntDodgeTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_dodge_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntDodgeTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntDodge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_dodge",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntDodgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GruntDodgeOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_dodge_on_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/procedures/GruntDodgeOnSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grunt2",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grunt_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/purgatory/client/renderer/Grunt2Renderer.java",
+          "src/main/resources/assets/purgatory/models/item/grunt_2_spawn_egg.json",
+          "src/main/java/net/mcreator/purgatory/entity/model/Grunt2Model.java",
+          "src/main/java/net/mcreator/purgatory/entity/Grunt2Entity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -23,7 +212,11 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.purgatory.purgatory_block": "Purgatory Block"
+      "entity.purgatory.grunt_2": "Grunt 2",
+      "block.purgatory.purgatory_block": "Purgatory Block",
+      "item.purgatory.grunt_spawn_egg": "Grunt Spawn Egg",
+      "item.purgatory.grunt_2_spawn_egg": "Grunt 2 Spawn Egg",
+      "entity.purgatory.grunt": "Grunt"
     }
   },
   "foldersRoot": {
@@ -41,8 +234,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.purgatory"
   },
   "mcreatorVersion": 202400342716

@@ -1,3 +1,7 @@
 {
-  "block.purgatory.purgatory_block": "Purgatory Block"
+  "entity.purgatory.grunt_2": "Grunt 2",
+  "block.purgatory.purgatory_block": "Purgatory Block",
+  "item.purgatory.grunt_spawn_egg": "Grunt Spawn Egg",
+  "item.purgatory.grunt_2_spawn_egg": "Grunt 2 Spawn Egg",
+  "entity.purgatory.grunt": "Grunt"
 }

@@ -25,6 +25,11 @@ public class PurgatoryModTabs {
 
 			tabData.accept(PurgatoryModBlocks.PURGATORY_BLOCK.get().asItem());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+
+			tabData.accept(PurgatoryModItems.GRUNT_SPAWN_EGG.get());
+			tabData.accept(PurgatoryModItems.GRUNT_2_SPAWN_EGG.get());
+
 		}
 	}
 }

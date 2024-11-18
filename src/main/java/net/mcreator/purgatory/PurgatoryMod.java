@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.purgatory.init.PurgatoryModTabs;
 import net.mcreator.purgatory.init.PurgatoryModItems;
+import net.mcreator.purgatory.init.PurgatoryModEntities;
 import net.mcreator.purgatory.init.PurgatoryModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -43,7 +44,7 @@ public class PurgatoryMod {
 		PurgatoryModBlocks.REGISTRY.register(modEventBus);
 
 		PurgatoryModItems.REGISTRY.register(modEventBus);
-
+		PurgatoryModEntities.REGISTRY.register(modEventBus);
 		PurgatoryModTabs.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
